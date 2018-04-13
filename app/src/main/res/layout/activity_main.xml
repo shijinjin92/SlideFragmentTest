@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <TextView
+           android:id="@+id/id_page1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:text="Pager One"
+           android:textSize="18sp"
+           android:layout_weight="1"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/id_page2"
+           android:gravity="center"
+           android:text="Page Two"
+           android:textSize="18sp"
+           android:layout_weight="1"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/id_page3"
+           android:gravity="center"
+           android:text="Page Three"
+           android:textSize="18sp"
+           android:layout_weight="1"
+           />
+   </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/view_bar"
+        android:background="#77A0DD"/>
+
+    <include layout="@layout/line"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/id_viewpager"
+        android:persistentDrawingCache="animation"
+        />
+
+</LinearLayout>
